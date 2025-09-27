@@ -1,0 +1,1202 @@
+{
+  "medical_summary": [
+    {
+      "category": "손상에 대한 전신반응 (Systemic Response to Injury)",
+      "topics": [
+        {
+          "title": "염증 반응의 시작 (Initiation of Inflammatory Response)",
+          "content": [
+            {
+              "point": "병원체 침입 시 PAMPs (Pathogen-Associated Molecular Patterns)가, 조직 손상 시 DAMPs (Damage-Associated Molecular Patterns)가 생성됩니다.",
+              "details": "이러한 패턴들이 수용체에 의해 인식되어 염증 반응에 필요한 물질들을 만들어냅니다."
+            },
+            {
+              "point": "주요 염증 매개체 (Key Inflammatory Mediators)로는 사이토카인 (cytokine)과 인터루킨 (interleukin)이 있습니다."
+            }
+          ]
+        },
+        {
+          "title": "SIRS (Systemic Inflammatory Response Syndrome)",
+          "content": [
+            {
+              "point": "정의 (Definition)",
+              "details": "주로 감염 등에 의해 과도한 염증반응 (사이토카인 폭풍, cytokine storm 등)이 일어나 장기부전 (organ failure) 및 사망을 유발하는 상태입니다."
+            },
+            {
+              "point": "진단 기준 (Diagnostic Criteria)",
+              "details": "아래 4가지 기준 중 2개 이상을 충족할 경우 진단됩니다.",
+              "criteria": [
+                "체온 (Temperature): > 38°C 또는 < 36°C",
+                "심박수 (Heart Rate): > 90회/분",
+                "호흡수 (Respiratory Rate): > 20회/분",
+                "백혈구 수 (WBC count): > 12,000/mm³ 또는 < 4,000/mm³"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "CARS (Compensatory Anti-inflammatory Response Syndrome)",
+          "content": [
+            {
+              "point": "개념 (Concept)",
+              "details": "SIRS와 동시에 진행되며, 과도한 염증 반응을 억제하고 면역 항상성 (immune homeostasis)을 회복하려는 보상적 반응입니다."
+            }
+          ]
+        },
+        {
+          "title": "패혈증 (Sepsis) 및 패혈성 쇼크 (Septic Shock)",
+          "content": [
+            {
+              "point": "패혈증 (Sepsis) 정의",
+              "details": "감염에 대한 조절되지 않는 숙주 반응으로 인해 발생하는 생명을 위협하는 장기 기능 장애입니다. 감염이 의심되고 SOFA 점수가 2점 이상 상승했을 때 진단됩니다."
+            },
+            {
+              "point": "패혈증의 특징 (Characteristics of Sepsis)",
+              "details": "항응고인자 생산이 감소하여, 명백한 출혈이 없음에도 혈소판 감소증 (thrombocytopenia)이 발생할 수 있으며, 이로 인해 말단 부위가 괴사될 수 있습니다."
+            },
+            {
+              "point": "패혈성 쇼크 (Septic Shock) 정의",
+              "details": "패혈증 환자가 평균동맥압 (MAP) 65mmHg 이상을 유지하기 위해 혈관수축제 (vasopressor)를 필요로 하고, 혈중 젖산염 (lactate) 수치가 2mmol/L 이상일 때 진단됩니다. 다발성 장기부전 (multiple organ dysfunction syndrome)을 동반합니다."
+            },
+            {
+              "point": "패혈성 쇼크 치료 (Treatment for Septic Shock)",
+              "details": "광범위 항생제 (broad-spectrum antibiotics), 수액 요법 (fluid resuscitation, 되도록 plasma-lyte 사용), 그리고 혈관수축제 (vasopressor)를 동시에 신속하게 투여해야 합니다."
+            }
+          ]
+        },
+        {
+          "title": "쇼크의 종류별 혈역학적 특징 (Hemodynamic Profiles of Shock Types)",
+          "table_data": {
+            "headers": ["TYPE", "CAUSE", "SVR", "PCWP", "SvO₂", "CO"],
+            "rows": [
+              { "TYPE": "심인성 쇼크 (Cardiogenic)", "CAUSE": ["울혈성 심부전 (Congestive heart failure)", "급성 심근경색 (Acute myocardial infarction)", "판막 질환 (Valvular disease)"], "SVR": "↑", "PCWP": "↑", "SvO₂": "↓", "CO": "↓" },
+              { "TYPE": "혈액량감소성 쇼크 (Hypovolemic)", "CAUSE": ["외상성 출혈 (Traumatic Hemorrhage)", "구토 또는 설사 (Vomiting or diarrhea)"], "SVR": "↑", "PCWP": "↓", "SvO₂": "↓", "CO": "↓" },
+              { "TYPE": "폐쇄성 쇼크 (Obstructive)", "CAUSE": ["긴장성 기흉 (Tension pneumothorax)", "폐색전증 (Pulmonary embolism)", "심장 눌림증 (Cardiac tamponade)"], "SVR": "↑", "PCWP": "↑", "SvO₂": "↓", "CO": "↓" },
+              { "TYPE": "분포성 쇼크 - 패혈성 (Distributive - Septic)", "CAUSE": ["혈류 감염 (Infection in bloodstream)"], "SVR": "↓", "PCWP": "↓", "SvO₂": "↑", "CO": "↑" },
+              { "TYPE": "분포성 쇼크 - 아나필락시스성 (Distributive - Anaphylactic)", "CAUSE": ["알레르기 반응 (Allergic reaction)"], "SVR": "↓", "PCWP": "↓", "SvO₂": "↑", "CO": "↑" },
+              { "TYPE": "분포성 쇼크 - 신경성 (Distributive - Neurogenic)", "CAUSE": ["중추신경계 손상 (Injury to CNS)"], "SVR": "↓", "PCWP": "↓", "SvO₂": "↓", "CO": "↓" }
+            ],
+            "notes": "분포성 쇼크(패혈성, 아나필락시스성)는 전신혈관저항(SVR)이 감소하여 심박출량(CO)이 보상적으로 증가하는 특징을 보입니다. 반면, 혈액량감소성 쇼크는 혈액량 자체가 부족하여 CO가 감소하고, 이를 보상하기 위해 SVR이 증가합니다."
+          }
+        }
+      ]
+    },
+    {
+      "category": "수술 합병증 (Wound Complication)",
+      "topics": [
+        {
+          "title": "창상 합병증 (Wound Complications)",
+          "content": [
+            {
+              "point": "장액종 (Seroma)",
+              "details": "증상이 있을 때만 치료하며, 장기를 압박하는 경우 배액 (drainage)을 시행하고 감염 시에는 절개 후 드레싱합니다. 함부로 천자하지 않습니다."
+            },
+            {
+              "point": "혈종 (Hematoma)",
+              "details": "장액종과 달리 주변 조직에 문제를 유발할 수 있으며, 위치와 정도에 따라 관리 방법이 달라집니다. 예방을 위해 항혈소판제나 항응고제는 수술 5일 전에 중단합니다."
+            },
+            {
+              "point": "급성 창상 벌어짐 (Acute Wound Failure)",
+              "sub_points": [
+                {
+                  "term": "창상 벌어짐 (Dehiscence)",
+                  "description": "피부층만 벌어진 상태로 감염과는 관련이 없습니다. 수술 없이 피부만 다시 봉합합니다."
+                },
+                {
+                  "term": "내장 노출 (Evisceration)",
+                  "description": "주로 수술 후 첫 주에 발생하며, 복강 내 내용물이 외부로 노출되는 응급 상황으로 즉시 수술이 필요합니다."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "수술 부위 감염 (Surgical Site Infection, SSI)",
+          "content": [
+            {
+              "point": "원인 (Cause)",
+              "details": "대부분 환자 자신의 정상 균총 (normal flora)에 의해 발생하며, 그람 양성 구균 (Gram-positive cocci)이 50%를 차지합니다. 대부분 수술 후 30일 이내에 발생합니다."
+            },
+            {
+              "point": "수술 창상 분류 (Surgical Wound Classification)",
+              "classes": [
+                { "class": "1단계: 청결 창상 (Clean)", "examples": "탈장 (hernia), 유방 (breast), 갑상선 (thyroid) 수술" },
+                { "class": "2단계: 청결-오염 창상 (Clean-contaminated)", "examples": "폐 (Lung), 위장관 (GI tract), 대장항문 (colorectal) 수술" },
+                { "class": "3단계: 오염 창상 (Contaminated)", "examples": "복막염 (peritonitis)" },
+                { "class": "4단계: 더러운 창상 (Dirty)", "examples": "고름이나 괴사 조직이 있는 심한 감염 창상" }
+              ]
+            },
+            {
+              "point": "항생제 사용 (Antibiotic Use)",
+              "details": [
+                "2, 3단계 창상은 해당 부위의 정상 균총을 고려하여 예방적 항생제를 사용하고, 4단계 창상은 치료적 항생제를 사용합니다.",
+                "예방적 항생제는 수술 시작 60분 전에 투여하고, 수술 시간이 길어지면 추가 투여 (redose)하며, 24시간을 넘지 않도록 합니다.",
+                "심장/혈관 수술 시 Cefazolin, Vancomycin을, 장 수술 시 Metronidazole을 사용합니다. 베타락탐 (β-lactam) 계열 알레르기가 있는 경우 Clindamycin을 사용합니다."
+              ]
+            },
+            {
+              "point": "SSI 위험 감소 전략 (Strategies to Reduce SSI Risk)",
+              "details": [
+                "수술 전 스테로이드 용량 줄이기",
+                "혈당 조절 (목표 < 200 mg/dL)",
+                "영양 보충",
+                "수술 부위 제모 시 면도기 대신 클리핑 (clipping) 사용",
+                "수술 전날 비누로 샤워"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "전신 합병증 (Systemic Complications)",
+          "content": [
+            {
+              "point": "저체온증 (Hypothermia)",
+              "details": "SSI 위험을 증가시키고, 혈소판 기능 저하로 출혈을 조장할 수 있어 수술 후 체온 관리가 중요합니다."
+            },
+            {
+              "point": "수술 후 고열 (Postoperative Fever)",
+              "timeline": [
+                { "period": "수술 후 3일 이내", "cause": "무기폐 (Atelectasis)가 가장 흔하며, 감염이 원인이 아닌 경우가 많습니다." },
+                { "period": "수술 후 3-5일", "cause": "창상 감염 (Wound infection)을 의심해야 합니다." },
+                { "period": "수술 후 5-8일 이후", "cause": "카테터로 인한 요로 감염 (urinary tract infection)이나 정맥관 관련 감염을 의심하며, 예후가 좋지 않을 수 있습니다. 카테터와 정맥관은 가능한 한 빨리 제거하는 것이 좋습니다." }
+              ]
+            },
+            {
+              "point": "호흡기 합병증 (Respiratory Complications)",
+              "details": "수술 후 합병증의 약 25%를 차지합니다. 횡격막에 가까운 수술, 전신마취, 3시간 이상의 긴 수술 시간 등이 위험 요인입니다.",
+              "types": [
+                { "condition": "무기폐 (Atelectasis)", "description": "상복부 수술 환자에서 흔하며, 수술 3일 내에 열이 나는 주요 원인입니다." },
+                { "condition": "폐렴 (Pneumonia/Pneumonitis)", "description": "흡인 (aspiration) 위험 요인(복부 팽만, 부적절한 금식, 의식 저하, 고령)이 있는 환자에서 발생하며 예방이 중요합니다. 예방을 위해 6-8시간의 금식이 필요합니다." },
+                { "condition": "폐부종 (Pulmonary Edema) vs. 급성호흡곤란증후군 (ARDS)", "description": "구분이 중요합니다. 폐부종은 과도한 수액 주입 등으로 폐포에 물이 차는 상태로 열이 없고 산소와 이뇨제로 치료합니다. ARDS는 외상, 감염 등으로 인한 염증 반응으로 열이 있으며, 산소 치료와 기관 삽관 (intubation)이 필요할 수 있습니다." },
+                { "condition": "폐색전증 (Pulmonary Embolism)", "description": "심부정맥혈전증 (DVT)이 위험 요인이며, 항응고제와 혈전용해제로 치료합니다. 예방을 위해 압박 스타킹 등으로 다리의 정맥 흐름을 돕습니다." }
+              ]
+            },
+            {
+              "point": "심장 합병증 (Cardiac Complications)",
+              "details": [
+                {
+                  "term": "수술 후 고혈압 (Postoperative Hypertension)",
+                  "description": "이완기 혈압 (diastolic BP) > 110 mmHg일 때를 말하며, 수축기 혈압 (systolic BP) > 160 mmHg이면 뇌졸중 (stroke) 및 사망 위험이 증가합니다."
+                }
+              ]
+            },
+            {
+              "point": "위장관 합병증 (GI Complications)",
+              "types": [
+                { "condition": "마비성 장폐색 (Paralytic Ileus)", "description": "장운동이 일시적으로 마비된 상태입니다. 복부 X-ray에서 air-fluid level이 보이지 않고, 압통 및 반발통이 없습니다. 보존적 치료(수액, 원인 교정)를 합니다." },
+                { "condition": "기계적 장폐색 (Mechanical Bowel Obstruction)", "description": "과거 복부 수술 이력이 있는 경우 위험이 높습니다. air-fluid level이 보이고, 압통 및 반발통이 있으며, 응급 수술이 필요합니다." },
+                { "condition": "클로스트리듐 디피실 감염 (Clostridioides difficile infection, CDI)", "description": "대변 분석으로 진단하며, 경구 (oral) Vancomycin 또는 정맥 주사 (IV) Metronidazole로 치료합니다." }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "수술 전 위험도 평가와 준비 (Preoperative Risk Assessment and Preparation)",
+      "topics": [
+        {
+          "title": "심장 위험도 평가 (Cardiac Risk Assessment)",
+          "content": [
+            { "point": "비침습적 검사 (Non-invasive Tests)", "details": "cTn (cardiac Troponin), NT-proBNP 수치로 심장 질환 위험을 측정합니다. 심전도 (ECG)는 대부분 시행하지만, 간단한 수술에서는 생략될 수 있습니다. 호흡곤란 (dyspnea)이 있는 경우 좌심실 기능 검사를 시행합니다." },
+            { "point": "침습적 검사 (Invasive Tests)", "details": "침습적 관상동맥 조영술 (Invasive coronary angiography)은 일반적으로 권장되지 않습니다." },
+            { "point": "급성 심근경색 (Acute MI) 환자", "details": "응급 수술이 아니라면, 심근경색을 먼저 치료한 후 수술을 진행해야 합니다." }
+          ]
+        },
+        {
+          "title": "관상동맥 시술 후 수술 시점 (Timing of Surgery After Coronary Intervention)",
+          "content": [
+            { "procedure": "풍선 혈관성형술 (Balloon Angioplasty)", "delay": "정규 수술 (elective surgery)을 최소 14일 연기합니다." },
+            { "procedure": "약물 용출 스텐트 (DES-PCI) - 급성 관상동맥 증후군", "delay": "정규 수술을 최소 1년 연기합니다." },
+            { "procedure": "약물 용출 스텐트 (DES-PCI) - 만성 관상동맥 질환", "delay": "정규 수술을 최소 6개월 연기합니다." },
+            { "procedure": "약물 용출 스텐트 (DES-PCI) - 암 수술 등 시급한 경우", "delay": "정규 수술을 최소 3개월 연기합니다." },
+            { "procedure": "일반 금속 스텐트 (BMS, Bare Metal Stent)", "delay": "시술 후 30일 이내에는 비심장 수술 (NCS)을 시행하지 않습니다." }
+          ]
+        },
+        {
+          "title": "수술 전 약물 관리 (Preoperative Medication Management)",
+          "content": [
+            { "drug_class": "항고혈압제 (Antihypertensives)", "drugs": "ACE 억제제 (ACEI), 안지오텐신 II 수용체 차단제 (ARB) 등 RAAS 억제제", "action": "수술 중 저혈압 위험으로 수술 24시간 전에 중단합니다." },
+            { "drug_class": "베타 차단제 (Beta-blocker)", "drugs": "Metoprolol, Propranolol 등", "action": "심장 보호 효과가 있으므로 수술 전후로 계속 유지합니다." },
+            { "drug_class": "지질저하제 (Lipid-lowering agents)", "drugs": "스타틴 (Statins)", "action": "계속 복용합니다." },
+            { "drug_class": "경구 혈당강하제 (Oral Hypoglycemic Agents)", "drugs": "메트포르민 (Metformin)", "action": "젖산혈증 (lactic acidosis) 위험으로 수술 24시간 전에 중단합니다.", "drugs_2": "SGLT2 억제제 (SGLT2i)", "action_2": "케톤산증 (ketoacidosis) 위험으로 수술 3-4일 전에 중단합니다." },
+            { "drug_class": "인슐린 (Insulin)", "drugs": "-", "action": "일반적으로 계속 사용하며, 수술 당일에만 용량 조절 또는 중단할 수 있습니다." },
+            { "drug_class": "항응고제 (Anticoagulants)", "drugs": "와파린 (Warfarin)", "action": "출혈 위험으로 중단합니다. 해독제 (antidote)는 비타민 K, 4F-PCC, 신선동결혈장 (FFP)입니다." }
+          ]
+        },
+        {
+          "title": "기타 장기 기능 평가 (Other Organ System Evaluation)",
+          "content": [
+            { "system": "신장 기능 (Renal System)", "details": "사구체여과율 (GFR) < 60 mL/min (만성신장질환 3a기 이상)인 경우 신부전 고위험군입니다. 조영제, NSAIDs, 아미노글리코사이드 계열 항생제 사용에 주의해야 합니다. 투석 환자는 칼륨 (K+) 수치를 관리하고 수술 전날 투석을 시행합니다." },
+            { "system": "간 기능 (Hepatic System)", "details": "간 기능이 저하된 환자는 신장 기능도 함께 확인해야 합니다." },
+            { "system": "내분비계 (Endocrine System)", "details": "수술 스트레스로 코르티솔, 성장호르몬, 카테콜아민 분비가 촉진되어 혈당과 인슐린 저항성이 상승합니다. 당화혈색소 (HbA1c)로 최근 3개월간의 혈당 조절 상태를 파악합니다." },
+            { "system": "갑상선 기능 (Thyroid Function)", "details": "조절되지 않는 갑상선기능항진증 (hyperthyroidism)은 수술 중 부정맥을, 기능저하증 (hypothyroidism)은 저혈압 및 서맥을 유발할 수 있습니다. 심한 경우 수술을 연기합니다." }
+          ]
+        },
+        {
+          "title": "부신 기능 저하 평가 (Adrenal Insufficiency Assessment)",
+          "content": [
+            { "point": "원인 (Cause)", "details": "대부분 장기간의 스테로이드 사용으로 인한 HPA axis (시상하부-뇌하수체-부신 축) 억제가 원인입니다." },
+            { "point": "위험 (Risk)", "details": "스테로이드를 갑자기 중단하면 저혈압성 쇼크나 저혈당으로 인한 뇌손상을 유발할 수 있습니다." },
+            { "point": "평가 면제 기준", "details": "스테로이드 복용력이 3주 미만이거나, 프레드니손 (prednisone) 5mg 이하를 복용 중이거나, 간단한 수술인 경우는 추가 평가가 필요하지 않을 수 있습니다." },
+            { "point": "검사 방법 (Testing)", "details": "아침 혈청 코르티솔 수치를 측정합니다.", "levels": [
+              { "level": "< 5 μg/dL", "interpretation": "부신 기능 저하로 진단합니다." },
+              { "level": "5-10 μg/dL", "interpretation": "ACTH 자극 검사를 시행하여, 자극 후 코르티솔 수치가 18 μg/dL 미만이면 부신 기능 저하로 판단하고 수술 전 스트레스 용량의 스테로이드를 투여합니다." },
+              { "level": "> 10 μg/dL", "interpretation": "정상 기능으로 판단합니다." }
+            ]},
+            { "point": "수술 시 스테로이드 보충 (Perioperative Steroid Supplementation)", "details": "중등도 (moderate) 또는 대수술 (major) 시 하이드로코르티손 (hydrocortisone)을 투여합니다." }
+          ]
+        },
+        {
+          "title": "수혈 기준 (Transfusion Threshold)",
+          "content": [
+            { "point": "헤모글로빈 (Hemoglobin, Hb) 수치", "details": "일반적으로 Hb < 7 g/dL일 때 수혈을 고려합니다. (정상: 남성 13-17, 여성 12-16 g/dL)" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "외과 감염과 항생제 선택 (Surgical Infections and Antibiotic Selection)",
+      "topics": [
+        {
+          "title": "감염 취약 요인 (Host Factors for Infection)",
+          "factors": ["고령", "영양실조", "비만", "당뇨", "수술 부위 방사선 치료 이력", "저체온", "저산소증", "스테로이드 사용"]
+        },
+        {
+          "title": "수술 후 고열 관리 (Management of Postoperative Fever)",
+          "timeline": [
+            {
+              "period": "수술 후 3일 이내",
+              "common_cause": "무기폐 (Atelectasis)",
+              "action": "흉부 X-ray (Chest PA)를 촬영하고, 기침 및 심호흡, Incentive Spirometry 사용을 격려합니다."
+            },
+            {
+              "period": "수술 후 3-5일",
+              "common_cause": "창상 감염 (Wound Infection)",
+              "action": "신체 검진(압통 등)을 통해 확인하고, 필요시 응급 수술 또는 CT 촬영을 결정합니다."
+            },
+            {
+              "period": "수술 후 5-8일",
+              "common_cause": "카테터 또는 정맥관 관련 감염",
+              "action": "원인이 되는 라인을 신속하게 제거하는 것이 중요합니다."
+            }
+          ]
+        },
+        {
+          "title": "수술 후 감염 최소화 전략 (Strategies to Minimize Postoperative Infection)",
+          "strategies": [
+            "입원 기간 최소화 (장기 입원이 SSI의 주요 원인)",
+            "경험적 항생제는 가능한 좁은 범위 (narrow-spectrum)로 선택하여 약제 내성(Multi-drug resistance)을 방지합니다.",
+            "적절한 제모 (제거하지 않거나 clipper 사용)",
+            "적절한 영양 공급",
+            "혈당 조절 (수술 후 2일간 140-180 mg/dL, 200 미만 유지)",
+            "정상 체온 유지",
+            "철저한 손 위생"
+          ]
+        },
+        {
+          "title": "예방적 항생제 사용 원칙 (Principles of Prophylactic Antibiotics)",
+          "principles": {
+            "timing": "수술 시작 1시간 전에 투여하고, 수술 후 24시간 이내에 중단합니다. (단, 심장 수술은 48시간까지 연장 가능)",
+            "selection": [
+              { "surgery_type": "심장 (Cardiac), 혈관 (Vascular)", "antibiotics": "Cefazolin, Vancomycin" },
+              { "surgery_type": "대장 (Colon)", "antibiotics": "Metronidazole" },
+              { "allergy_note": "베타락탐 (β-lactam) 계열 알레르기가 있는 경우 Clindamycin을 사용합니다." }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "category": "외과 환자에서의 영양관리 (Nutritional Management in Surgical Patients)",
+      "topics": [
+        {
+          "title": "영양 공급 적응증 (Indications for Nutritional Support)",
+          "criteria": [
+            "노인 환자의 경우 BMI < 18.5",
+            "최근 6개월간 10% 이상의 의도치 않은 체중 감소",
+            "혈청 알부민 (serum albumin) < 3.0 g/dL"
+          ]
+        },
+        {
+          "title": "영양 공급 경로 결정 (Determining the Route of Nutritional Support)",
+          "guidelines": [
+            {
+              "condition": "위장관 (GI tract) 기능이 정상인 경우",
+              "recommendation": "경구 섭취 (Oral intake)를 우선합니다."
+            },
+            {
+              "condition": "하루 이틀 내에 충분한 경구 섭취가 어렵거나 환자가 섭취를 거부하는 경우",
+              "recommendation": "경장 영양 (Enteral Nutrition, EN)을 시작합니다."
+            },
+            {
+              "condition": "EN만으로 2-3일 내에 필요 영양의 75%를 충족하지 못할 것으로 예상되는 경우",
+              "recommendation": "경장 영양과 비경구 영양을 병행 (EN + PN)합니다."
+            },
+            {
+              "condition": "2-3일 내에 EN 공급이 전혀 불가능할 것으로 예상되는 경우",
+              "recommendation": "총비경구영양 (Total Parenteral Nutrition, TPN)을 시행합니다."
+            }
+          ]
+        },
+        {
+          "title": "경장 영양 (Enteral Nutrition, EN)",
+          "content": [
+            {
+              "point": "장점 (Advantages)",
+              "details": "장 점막의 통합성 (mucosal integrity)을 유지하여 패혈증 (sepsis) 위험을 감소시킵니다."
+            },
+            {
+              "point": "금기 (Contraindications)",
+              "details": ["장 천공 (bowel perforation)", "장 폐쇄 (bowel obstruction)", "장 허혈 (bowel ischemia)", "복막염 (peritonitis)", "심한 구토/설사", "흡수 불량 (malabsorption)", "단장 증후군 (short bowel syndrome)", "활동성 장출혈 (active GI bleeding)", "7일 이내에 회복이 예상되는 경우"]
+            },
+            {
+              "point": "공급 방법 (Methods of Delivery)",
+              "details": [
+                "단기 (1-4주): 코를 통해 튜브 삽입 (Nasogastric/Nasojejunal tube). 흡인(aspiration) 방지를 위해 환자의 상체를 세운 자세를 유지합니다.",
+                "장기 (> 4주): PEG (Percutaneous Endoscopic Gastrostomy) 또는 Jejunostomy를 통해 복벽에 직접 관을 삽입합니다."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "비경구 영양 (Parenteral Nutrition, PN)",
+          "content": [
+            {
+              "point": "사용 원칙 (Principle of Use)",
+              "details": "위장관 기능이 조금이라도 남아있다면 보조적인 수단으로 사용해야 합니다."
+            },
+            {
+              "point": "종류 (Types)",
+              "details": [
+                "중심정맥 TPN (Central line TPN): 2주 이상 장기간, 고농도 영양액 투여 시 사용합니다.",
+                "말초정맥 TPN (Peripheral line TPN): 2주 이하 단기간, 저농도 영양액 투여 시 사용합니다."
+              ]
+            },
+            {
+              "point": "위험 (Risks)",
+              "details": "감염 위험이 높으며, 중심정맥관 삽입 시 기흉 (pneumothorax)의 위험이 있습니다. (내경정맥(IJV) 접근 시 위험 감소)"
+            }
+          ]
+        },
+        {
+          "title": "재급식 증후군 (Re-feeding Syndrome)",
+          "content": [
+            {
+              "point": "기전 (Mechanism)",
+              "details": "장기간 굶었던 환자에게 갑자기 많은 영양을 공급할 때 인슐린이 급격히 분비되면서 세포 내로 칼륨, 인, 마그네슘이 이동하여 심각한 전해질 불균형, 특히 저칼륨혈증 (hypokalemia)이 발생하는 상태입니다."
+            },
+            {
+              "point": "예방 (Prevention)",
+              "details": "영양 공급을 서서히 시작하고 점진적으로 증량합니다. 초기 1주일은 목표 칼로리의 60-70%만 공급하는 것을 목표로 합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "면역과 이식 (Immunology and Transplantation)",
+      "topics": [
+        {
+          "title": "주요 조직 적합성 복합체 (Major Histocompatibility Complex, MHC)",
+          "content": [
+            {
+              "type": "Class I MHC",
+              "description": "모든 유핵 세포에 존재하며, 세포 내부의 단백질 상태를 외부에 제시하는 역할을 합니다. 바이러스에 감염되거나 암세포로 변형된 경우, CD8+ T 세포(세포독성 T세포)가 이를 인지하고 해당 세포를 파괴합니다."
+            },
+            {
+              "type": "Class II MHC",
+              "description": "항원제시세포 (Antigen Presenting Cells, APC)인 대식세포 (macrophage), B 세포 등에만 존재합니다. 외부에서 포식한 항원을 분해하여 제시하면, CD4+ T 세포(도움 T세포)가 이를 정찰하고 면역 반응을 조절합니다."
+            },
+            {
+              "note": "항원 제시만으로는 T 세포가 활성화되지 않으며, 사이토카인 (cytokine)과 같은 보조자극인자 (costimulator)가 함께 필요합니다."
+            }
+          ]
+        },
+        {
+          "title": "이식 거부 반응 (Transplant Rejection)",
+          "types": [
+            {
+              "name": "초급성 거부반응 (Hyperacute Rejection)",
+              "onset": "수 분 ~ 수 시간 이내",
+              "mechanism": "수혜자에게 이미 존재하던 공여자에 대한 항체(과거 수혈, 임신, 이식 경험 등으로 생성)가 이식된 장기의 혈관을 즉시 공격하는 항체매개 반응입니다.",
+              "prevention": "이식 전 교차반응검사 (Cross-matching)를 통해 수혜자의 혈청(항체)과 공여자의 림프구를 반응시켜 양성(항체 존재)일 경우 이식을 금지합니다."
+            },
+            {
+              "name": "급성 거부반응 (Acute Rejection)",
+              "onset": "수 일 ~ 수 개월 이내",
+              "mechanism": "T 세포가 매개하거나 항체가 매개하는 반응입니다.",
+              "treatment": "고용량 스테로이드 충격 요법 (steroid pulse therapy)으로 치료합니다."
+            },
+            {
+              "name": "만성 거부반응 (Chronic Rejection)",
+              "onset": "수 개월 ~ 수 년",
+              "mechanism": "지속적인 동종항원 자극으로 인해 혈관 내벽이 점차 두꺼워져 장기 기능이 서서히 소실되는 반응입니다."
+            }
+          ]
+        },
+        {
+          "title": "이식편대숙주병 (Graft-versus-Host Disease, GVHD)",
+          "description": "예외적으로 공여자의 이식편(graft)에 포함된 면역세포(T세포 등)가 수혜자(host)의 신체를 공격하는 반응입니다."
+        },
+        {
+          "title": "면역억제 요법 (Immunosuppressive Therapy)",
+          "principles": [
+            {
+              "name": "유도 요법 (Induction Therapy)",
+              "description": "이식 초기에 강력한 면역억제제를 고용량으로 투여하여 급성 거부반응을 예방합니다. (이 기간 동안 격리 치료가 필요할 수 있습니다)"
+            },
+            {
+              "name": "유지 요법 (Maintenance Therapy)",
+              "description": "초기 유도 요법 이후, 저용량의 면역억제제를 지속적으로 사용하여 장기적인 면역 관용을 유도합니다."
+            },
+            {
+              "name": "병합 요법 (Combination Therapy)",
+              "description": "면역 반응은 여러 경로를 통해 일어나므로, 작용 기전이 다른 여러 약물을 병용하여 효과를 극대화하고 부작용을 최소화합니다. (예: 칼시뉴린 억제제는 T세포 활성화 신호를 차단합니다)"
+            }
+          ],
+          "note": "장기간 면역억제제 사용은 감염 위험을 높이므로, 지속적인 혈중 약물 농도 모니터링이 필수적입니다."
+        },
+        {
+          "title": "이식 전 검사 (Pre-transplant Evaluation)",
+          "tests": [
+            {
+              "name": "조직적합성항원 검사 (HLA Typing)",
+              "purpose": "공여자와 수혜자 간의 HLA 유전자 일치율을 검사하며, 일치율이 높을수록 이식 성공 확률이 증가합니다."
+            },
+            {
+              "name": "교차반응검사 (Cross-matching)",
+              "purpose": "초급성 거부반응을 예방하기 위해 시행하며, 양성일 경우 이식이 금지됩니다."
+            },
+            {
+              "name": "패널 반응 항체 검사 (Panel Reactive Antibody, PRA)",
+              "purpose": "수혜자 혈청 내에 존재하는 다양한 HLA 항원의 존재 여부를 검사하며, 양성일 경우 적합한 공여자를 찾기 어려워 이식이 금지될 수 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "쇼크 (Shock)",
+      "topics": [
+        {
+          "title": "쇼크의 정의 및 신호 (Definition and Signs of Shock)",
+          "definition": "세포의 산소 요구량과 공급량의 불균형으로 인해 발생하는 급성 순환 부전 (circulatory failure) 상태입니다.",
+          "signs": [
+            { "sign": "고젖산혈증 (Hyperlactatemia)", "detail": "조직 저관류 (tissue hypoperfusion)로 인해 혐기성 대사가 증가하여 발생합니다." },
+            { "sign": "저혈압 (Hypotension)", "detail": "보상 기전이 실패한 후 나타나는 후기 징후입니다." },
+            { "sign": "피부 변화 (Skin Changes)", "detail": "청색증 (cyanosis), 식은땀, 창백함." },
+            { "sign": "소변량 감소 (Oliguria)", "detail": "시간당 소변량이 체중(kg)당 0.5mL 미만으로 감소합니다." },
+            { "sign": "의식 저하 (Altered Mental Status)" }
+          ]
+        },
+        {
+          "title": "쇼크의 분류 및 치료 (Classification and Treatment of Shock)",
+          "types": [
+            {
+              "category": "분포성 쇼크 (Distributive Shock)",
+              "cause": "전신혈관저항 (SVR)의 급격한 감소가 주된 원인입니다.",
+              "primary_treatment": "혈관수축제 (Vasopressor)",
+              "subtypes": [
+                {
+                  "name": "패혈성 쇼크 (Septic Shock)",
+                  "mechanism": "감염으로 인한 전신적 염증 반응이 원인입니다.",
+                  "management_bundle": "1시간 이내에 1) 젖산염 수치 확인, 2) 혈액 배양 검사, 3) 광범위 항생제 투여, 4) 수액 공급, 5) 수액 공급에도 MAP > 65mmHg 유지가 안 되면 혈관수축제 투여를 시작해야 합니다."
+                },
+                {
+                  "name": "신경성 쇼크 (Neurogenic/Spinal Shock)",
+                  "mechanism": "척수 손상으로 교감신경계가 차단되어 혈관이 확장되고, 부교감신경이 우세해져 저혈압, 서맥, 저체온이 발생합니다. (예: 외상 후 출혈은 없는데 맥박과 혈압이 함께 떨어지는 경우)"
+                }
+              ]
+            },
+            {
+              "category": "폐쇄성 쇼크 (Obstructive Shock)",
+              "cause": "심장으로의 혈액 유입 또는 유출이 물리적으로 막혀 심박출량 (CO)이 감소하는 것이 원인입니다.",
+              "primary_treatment": "원인 제거 (예: 천자)",
+              "subtypes": [
+                {
+                  "name": "긴장성 기흉 (Tension Pneumothorax)",
+                  "mechanism": "흉강 내 공기가 차서 심장과 대혈관(특히 하대정맥, IVC)을 압박합니다.患측의 호흡음이 소실되고 기관이 반대쪽으로 편위됩니다.",
+                  "management": "응급 상황으로, 즉시 2번째 또는 3번째 늑간에 바늘 천자 (needle decompression)를 시행해야 합니다."
+                },
+                {
+                  "name": "심장 눌림증 (Cardiac Tamponade)",
+                  "mechanism": "심낭에 액체(주로 혈액)가 차서 심장의 확장을 방해합니다. 경정맥 팽창이 관찰되고 심음이 잘 들리지 않습니다. 초음파로 진단하며, 심낭 천자술 등으로 치료합니다."
+                }
+              ]
+            },
+            {
+              "category": "혈액량감소성 쇼크 (Hypovolemic Shock)",
+              "cause": "출혈 등으로 인해 혈액 또는 체액량이 절대적으로 부족하여 중심정맥압 (CVP)이 감소하는 것이 원인입니다.",
+              "signs": "초기에는 맥압 (pulse pressure)이 감소하고 심박수가 증가하며, 혈압 감소는 나중에 나타납니다.",
+              "management": [
+                "초기에는 결정질액 (crystalloid) 1L를 신속히 투여하나, 과도한 수액은 응고병증, 저체온, 산증을 유발할 수 있어 근본적인 치료는 수혈입니다.",
+                "수축기 혈압 (sBP)은 80-90mmHg를 목표로 합니다 (허용적 저혈압, permissive hypotension). (단, 중추신경계 손상 시 100-110mmHg 목표)",
+                "대량 수혈 시 혈장 (Plasma) : 혈소판 (Platelet) : 농축적혈구 (pRBC)를 1:1:1 또는 1:1:2 비율로 투여합니다.",
+                "수혈용 혈액에 포함된 항응고제인 시트르산 (citrate)은 저체온, 저칼슘혈증, 저칼륨혈증을 유발할 수 있으므로 칼슘 (Ca²⁺)을 함께 투여할 수 있습니다."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "혈관수축제 및 강심제 (Vasopressors and Inotropic Agents)",
+          "agents": [
+            { "name": "노르에피네프린 (Norepinephrine)", "use": "대부분의 분포성 쇼크에서 1차 선택 약제입니다." },
+            { "name": "바소프레신 (Vasopressin)", "use": "2차 선택 약제, 노르에피네프린의 용량을 줄이는 데 도움을 줍니다." },
+            { "name": "도파민 (Dopamine)", "use": "저용량에서는 심근 수축력을, 고용량에서는 혈관 수축을 유발합니다. 서맥이 동반되지 않은 쇼크에는 잘 사용하지 않습니다." },
+            { "name": "에피네프린 (Epinephrine)", "use": "강력한 혈관 수축과 심박수 증가 효과가 있습니다." },
+            { "name": "도부타민 (Dobutamine)", "use": "심장 기능이 저하된 심인성 쇼크에서 심장의 펌프 기능을 강화하기 위해 사용합니다. 혈관 확장 효과가 있어 혈액량감소성 쇼크에서는 저혈압을 악화시킬 수 있습니다." }
+          ]
+        },
+        {
+          "title": "조직 관류 평가 지표 (Tissue Perfusion Assessment Markers)",
+          "markers": ["젖산염 (Lactate) 수치", "모세혈관 재충전 시간 (Capillary refill time, 2-3초 이내)", "시간당 소변량", "피부 얼룩 (Skin mottling)"],
+          "note": "이러한 지표들은 혈압이나 심박출량보다 조직의 실제 산소 공급 상태를 더 잘 반영할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "category": "외과 중환자 관리 (Surgical Critical Care)",
+      "topics": [
+        {
+          "title": "신경계 관리 (Neurological Management)",
+          "assessments": [
+            { "tool": "CPOT (Critical-Care Pain Observation Tool)", "purpose": "통증 평가 도구", "interventions": "아세트아미노펜 (Acetaminophen), 가바펜틴 (Gabapentin) 등 비마약성 진통제 사용" },
+            { "tool": "RASS (Richmond Agitation-Sedation Scale)", "purpose": "진정 및 불안 수준 평가 도구", "interventions": "필요시 진정제 사용" },
+            { "tool": "CAM-ICU (Confusion Assessment Method for the ICU)", "purpose": "섬망 (Delirium) 진단 도구", "interventions": "섬망에 대한 특정 치료약은 없으며, 원인 교정이 중요합니다." }
+          ]
+        },
+        {
+          "title": "심혈관계 관리 (Cardiovascular Management) - 빈맥성 부정맥",
+          "arrhythmias": [
+            {
+              "name": "심방세동 (Atrial Fibrillation, AF)",
+              "management": [
+                {
+                  "condition": "혈역학적으로 불안정 (Unstable, 심한 저혈압 동반)",
+                  "treatment": "응급 전기적 동율동 전환 (Electrical Cardioversion) 시행"
+                },
+                {
+                  "condition": "혈역학적으로 안정 (Stable)",
+                  "treatment": "약물 치료. 주로 아미오다론 (Amiodarone)이나 디곡신 (Digoxin) 사용. 베타차단제나 칼슘채널차단제는 저혈압이나 심부전을 악화시킬 수 있어 주의가 필요합니다."
+                }
+              ]
+            },
+            {
+              "name": "발작성 심실상성 빈맥 (Paroxysmal Supraventricular Tachycardia, PSVT)",
+              "management": [
+                { "order": "1차", "treatment": "미주신경 자극법 (Vagal Maneuver, 예: 경동맥 마사지)" },
+                { "order": "2차", "treatment": "아데노신 (Adenosine) 정맥주사" },
+                { "order": "3차", "treatment": "베타차단제, 칼슘채널차단제" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "기타 시스템 관리 (Other System Management)",
+          "systems": [
+            { "name": "호흡계 (Respiratory)", "note": "ARISCAT 점수를 사용하여 수술 후 폐 합병증 위험을 예측합니다." },
+            { "name": "소화계 (Gastrointestinal)", "note": "중환자는 대사 요구량이 증가하여 일반 환자보다 더 많은 칼로리가 필요합니다." },
+            { "name": "신장계 (Renal)", "note": "급성 신손상 시 간헐적 혈액투석(iHD) 또는 지속적 신대체요법(CRRT)을 시행합니다. CRRT는 혈역학적으로 불안정한 환자에서 선호됩니다." },
+            { "name": "혈액계 (Hematologic)", "note": "정맥 혈전색전증 (Venous Thromboembolism, VTE) 예방이 중요합니다. VTE에는 심부정맥혈전증(DVT)과 폐색전증(PE)이 포함됩니다." },
+            { "name": "감염 (Infection)", "note": "중심정맥관 관련 혈류감염 (CLABSI) 발생 시 경험적 항생제를 투여합니다." }
+          ]
+        },
+        {
+          "title": "중환자 모니터링 (ICU Monitoring)",
+          "methods": [
+            { "name": "동맥관 (Arterial line)", "purpose": "실시간으로 혈압을 지속적으로 감시하기 위해 주로 요골동맥 (radial artery)에 삽입합니다." },
+            { "name": "중심정맥관 (Central venous line)", "purpose": "고농도 영양 공급, 약물 투여, 혈역학적 상태 감시를 위해 주로 내경정맥 (internal jugular vein)에 삽입합니다." }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "노인 환자 수술 (Surgery in Elderly Patients)",
+      "topics": [
+        {
+          "title": "수술 전 평가 (Preoperative Assessment)",
+          "assessments": [
+            {
+              "area": "운동 능력 (Functional Capacity)",
+              "method": "MET (Metabolic Equivalent of Task)으로 평가합니다.",
+              "interpretation": "4 MET 미만(예: 천천히 계단 오르기 어려움)의 활동 능력을 가진 경우, 수술 후 심장 합병증 발생 위험이 증가합니다."
+            },
+            {
+              "area": "영양 상태 (Nutritional Status)",
+              "method": "혈청 알부민 (serum albumin) 수치 등으로 평가합니다.",
+              "criteria_for_detailed_assessment": [
+                "BMI < 18.5 kg/m²",
+                "혈청 알부민 < 3.0 g/dL",
+                "지난 6개월간 10% 이상 체중 감소"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "폐 합병증 위험 인자 (Risk Factors for Pulmonary Complications)",
+          "factors": {
+            "patient_related": [
+              "60세 이상 고령",
+              "ASA 분류 2등급 이상",
+              "혈청 크레아티닌 > 1.5 mg/dL",
+              "혈청 알부민 < 3.5 g/dL"
+            ],
+            "surgery_related": [
+              "3시간 이상의 장시간 수술",
+              "응급 수술",
+              "수술 부위 (상복부, 흉부)",
+              "전신 마취",
+              "수혈",
+              "신경근차단제 잔류 효과"
+            ]
+          }
+        },
+        {
+          "title": "고식적 수술 (Palliative Surgery)",
+          "definition": "생존 기간 연장에 미치는 영향은 미미하지만, 증상 완화를 통해 삶의 질 (Quality of Life, QoL) 향상을 목적으로 하는 수술입니다."
+        }
+      ]
+    },
+    {
+      "category": "흡입마취 (Inhalation Anesthesia)",
+      "topics": [
+        {
+          "title": "흡입마취제의 원리 (Principles of Inhaled Anesthetics)",
+          "content": [
+            {
+              "point": "작용 기전 (Mechanism of Action)",
+              "details": "흡입마취제의 약효(마취 깊이)는 농도가 아닌 분압 (partial pressure)에 의해 결정됩니다. 마취제가 폐포를 통해 혈액으로, 다시 중추신경계(CNS)로 확산되어 뉴런 세포막에 작용합니다."
+            },
+            {
+              "point": "분압의 중요성",
+              "details": "폐포, 혈액, CNS의 마취제 분압은 동적 평형을 이루므로, 호기말 이산화탄소(ETCO2)와 함께 가스 농도를 측정하면 CNS 분압을 예측하고 마취 깊이를 실시간으로 조절할 수 있습니다."
+            }
+          ]
+        },
+        {
+          "title": "약동학적 특성 (Pharmacokinetics)",
+          "content": [
+            {
+              "term": "분배계수 (Partition Coefficient)",
+              "description": "혈액에 대한 용해도와 비례합니다. 분배계수가 클수록 마취제가 혈액에 많이 녹아있어 폐포 분압 상승이 느려지고, 결과적으로 마취 유도(onset)와 회복이 지연됩니다.",
+              "examples": [
+                { "agent": "Desflurane", "blood_gas_partition_coefficient": 0.42 },
+                { "agent": "Nitrous Oxide (N₂O)", "blood_gas_partition_coefficient": 0.47 },
+                { "agent": "Sevoflurane", "blood_gas_partition_coefficient": 0.66 }
+              ]
+            },
+            {
+              "term": "최소폐포농도 (Minimum Alveolar Concentration, MAC)",
+              "description": "표준 자극에 대해 50%의 환자가 움직이지 않게 되는 폐포 내 마취제 농도입니다. 흡입마취제의 역가 (potency)를 나타내는 상대적 지표입니다.",
+              "interpretation": "MAC 값이 낮을수록 더 강력한(역가가 높은) 마취제입니다.",
+              "examples": [
+                { "agent": "Sevoflurane", "mac": "~2%" },
+                { "agent": "Desflurane", "mac": "6%" },
+                { "agent": "Nitrous Oxide (N₂O)", "mac": "105%" }
+              ]
+            },
+            {
+              "point": "MAC에 영향을 미치는 요인",
+              "factors": {
+                "mac_decrease": ["고령", "저체온", "저혈압", "임신", "저나트륨혈증", "급성 알코올 섭취", "중추신경 억제제"],
+                "mac_increase": ["소아/영아", "고체온", "고나트륨혈증", "만성 알코올 섭취", "중추신경계 자극제 (예: 암페타민)"],
+                "no_effect": ["성별", "비만", "인종", "수술 시간"]
+              }
+            }
+          ]
+        },
+        {
+          "title": "주요 흡입마취제 특징 (Characteristics of Major Inhaled Anesthetics)",
+          "agents": [
+            { "name": "아산화질소 (Nitrous Oxide, N₂O)", "properties": "무색무취. 마취 효과가 약해 단독 사용은 어렵고 다른 마취제와 병용합니다. 체내 공간(cavity)을 확장시키는 효과가 있어 기흉 등이 있는 환자에게는 금기입니다." },
+            { "name": "세보플루란 (Sevoflurane)", "properties": "자극적인 냄새가 적어 마스크 유도에 용이합니다. 분배계수가 낮고 MAC도 낮아(역가 높음) 임상에서 널리 사용됩니다." },
+            { "name": "데스플루란 (Desflurane)", "properties": "분배계수가 가장 낮아 유도와 회복이 매우 빠릅니다. 하지만 자극적인 냄새와 기도 자극이 심해 마취 유도에는 부적절합니다." }
+          ]
+        },
+        {
+          "title": "전신에 미치는 영향 (Systemic Effects)",
+          "systems": [
+            { "name": "중추신경계 (CNS)", "effect": "대부분 뇌 대사율(CMR)을 감소시키지만, 뇌혈관을 확장시켜 뇌압(ICP)을 상승시킬 수 있습니다. (예외: N₂O는 CMR을 증가시킴)" },
+            { "name": "심혈관계 (Cardiovascular)", "effect": "대부분 전신혈관저항(SVR)을 감소시켜 혈압을 낮춥니다. (예외: N₂O는 교감신경을 자극하여 SVR과 혈압을 유지). 심박출량(CO)은 대체로 유지되거나 감소합니다." },
+            { "name": "호흡계 (Respiratory)", "effect": "호흡을 빠르고 얕게 만들어 일회호흡량(Tidal Volume)은 감소하고 호흡수(RR)는 증가하며, 결과적으로 동맥혈 이산화탄소 분압(PaCO₂)은 증가합니다." },
+            { "name": "신경근 (Neuromuscular)", "effect": "신경근 차단 효과가 있어 근이완제의 필요량을 줄여줍니다. (효과: Desflurane > Sevoflurane)" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "마취 전 환자평가 및 관리 (Pre-anesthetic Patient Evaluation and Management)",
+      "topics": [
+        {
+          "title": "금식 시간 가이드라인 (Fasting Guidelines)",
+          "guidelines": [
+            { "intake": "맑은 음료 (Clear liquids, 예: 물, 주스)", "duration": "2시간" },
+            { "intake": "모유 (Breast milk)", "duration": "4시간" },
+            { "intake": "분유, 이유식, 가벼운 식사 (Formula, light meal)", "duration": "6시간" },
+            { "intake": "일반 식사 (기름진 음식 포함) (Regular meal)", "duration": "8시간" }
+          ]
+        },
+        {
+          "title": "기도 평가 (Airway Assessment)",
+          "methods": [
+            {
+              "acronym": "LEMON (기관 삽관 어려움 예측)",
+              "components": [
+                { "letter": "L", "meaning": "Look Externally (외부 관찰)" },
+                { "letter": "E", "meaning": "Evaluate 3-3-2 Rule (3-3-2 규칙 평가)" },
+                { "letter": "M", "meaning": "Mallampati score (말로만파티 점수 3점 이상)" },
+                { "letter": "O", "meaning": "Obstruction/Obesity (기도 폐쇄/비만)" },
+                { "letter": "N", "meaning": "Neck Mobility (목 운동성 제한)" }
+              ]
+            },
+            {
+              "acronym": "MOANS (마스크 환기 어려움 예측)",
+              "components": [
+                { "letter": "M", "meaning": "Mask Seal (마스크 밀착 어려움)" },
+                { "letter": "O", "meaning": "Obstruction/Obesity (기도 폐쇄/비만)" },
+                { "letter": "A", "meaning": "Age > 55 (55세 이상)" },
+                { "letter": "N", "meaning": "No Teeth (치아 없음)" },
+                { "letter": "S", "meaning": "Stiff Lungs (뻣뻣한 폐, 예: 천식, COPD)" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "동반 질환 관리 (Management of Comorbidities)",
+          "conditions": [
+            { "name": "고혈압 (Hypertension)", "management": "대부분의 항고혈압제는 수술 당일까지 복용을 유지합니다. (단, ACEi/ARB는 예외)" },
+            { "name": "허혈성 심장질환 (Ischemic Heart Disease)", "management": "항혈전제/항응고제는 출혈 위험으로 수술 전에 중단할 수 있습니다. 베타차단제는 심장 보호 효과가 있어 유지합니다." },
+            { "name": "천식 (Asthma)", "management": "수술 전 불안 완화를 위해 벤조디아제핀(BDZ) 계열 약물을 투여하고, 흡입기는 계속 사용합니다." },
+            { "name": "만성폐쇄성폐질환 (COPD)", "management": "최소 수술 2개월 전 금연이 권장됩니다." },
+            { "name": "감염성 폐질환 (Infectious Lung Disease)", "management": "감염 치료 후 수술을 진행하며, 상기도 감염의 경우 최소 5주 후 수술을 고려합니다." }
+          ]
+        },
+        {
+          "title": "미국 마취과학회 신체상태 분류 (ASA Physical Status Classification)",
+          "table_data": {
+            "headers": ["Class", "Description", "Example"],
+            "rows": [
+              { "Class": "ASA 1", "Description": "전신 질환이 없는 건강한 환자", "Example": "" },
+              { "Class": "ASA 2", "Description": "경증의 전신 질환이 있으나 기능적 제한은 없는 환자", "Example": "조절 잘 되는 고혈압/당뇨병, 비만, 고령" },
+              { "Class": "ASA 3", "Description": "중증의 전신 질환이 있어 기능적 제한이 있는 환자", "Example": "조절 안 되는 고혈압/당뇨병, 협심증, 심근경색 병력" },
+              { "Class": "ASA 4", "Description": "생명을 위협하는 심각한 전신 질환을 가진 환자", "Example": "심부전, 불안정성 협심증, 진행된 간/신장 질환" },
+              { "Class": "ASA 5", "Description": "수술을 하지 않으면 24시간 이내에 사망할 것으로 예상되는 환자", "Example": "복부 대동맥류 파열, 폐색전" },
+              { "Class": "ASA 6", "Description": "장기 공여를 위해 수술이 예정된 뇌사 환자", "Example": "장기 기증자" }
+            ],
+            "modifier": {
+              "code": "E",
+              "description": "응급 수술(Emergency)을 나타내는 수식어로, 각 등급 뒤에 붙입니다. (예: ASA 1E)"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "회복 시 환자 관리 (Post-Anesthetic Care Unit Management)",
+      "topics": [
+        {
+          "title": "구역 및 구토 (Postoperative Nausea and Vomiting, PONV)",
+          "risk_factors": {
+            "adults": ["여성", "비흡연", "PONV 과거력", "수술 후 아편유사제(opioid) 사용"],
+            "children": ["3세 이상", "30분 이상의 수술", "사시 수술", "PONV 과거력"]
+          }
+        },
+        {
+          "title": "기도 폐쇄 (Airway Obstruction)",
+          "causes": ["마취제로 인한 인두 근육의 긴장도 소실", "구강 내 분비물로 인한 후두 경련 (laryngospasm)"],
+          "management_priority": [
+            { "priority": 1, "action": "인두 내 분비물 흡인 및 제거 (Suctioning)" },
+            { "priority": 2, "action": "턱 밀어올리기 (Jaw thrust) 및 기도 유지기 (Airway) 삽입" },
+            { "priority": 3, "action": "안면 마스크를 이용한 지속적 기도 양압 (CPAP)" }
+          ]
+        },
+        {
+          "title": "회복실에서 발생하는 문제들 (Common PACU Problems)",
+          "problems": [
+            { "name": "저환기 (Hypoventilation)", "cause": "잔류 마취제 효과, 아산화질소(N₂O) 사용 후 발생하는 확산성 저산소증 등. 동맥혈 이산화탄소 분압(PaCO₂) > 45mmHg로 정의됩니다." },
+            { "name": "고혈압 (Hypertension)", "cause": "통증, 방광 팽창, 떨림, 저산소증, 고탄산혈증 등" },
+            { "name": "저혈압 (Hypotension)", "cause": "심실 전부하 감소(출혈, 탈수), 심근 수축력 저하(마취제 효과), 전신혈관저항 감소(패혈증, 마취제 효과)" },
+            { "name": "심근 허혈 (Myocardial Ischemia)", "cause": "수술 후 스트레스로 인한 빈맥으로 심장의 산소 요구량이 공급량을 초과할 때 발생합니다." },
+            { "name": "각성 지연 (Delayed Emergence)", "cause": "잔류 약물 효과, 저혈압, 저산소증, 저혈당증, 저체온증 등" },
+            { "name": "각성기 섬망 (Emergence Delirium)", "cause": "통증, 기도 폐쇄, 불완전한 근이완 회복, 방광 팽창 등" },
+            { "name": "저체온 (Hypothermia)", "cause": "마취로 인한 혈관 확장, 차가운 수액/수혈 등. 산소 요구량을 3-4배 증가시킬 수 있습니다." }
+          ]
+        },
+        {
+          "title": "회복실 퇴실 기준 (PACU Discharge Criteria - Modified Aldrete Score)",
+          "table_data": {
+            "headers": ["Category", "Criteria", "Score"],
+            "rows": [
+              { "category": "활동 (Activity)", "criteria": "명령에 따라 사지 4개를 움직일 수 있음", "score": 2 },
+              { "category": "활동 (Activity)", "criteria": "명령에 따라 사지 2개를 움직일 수 있음", "score": 1 },
+              { "category": "활동 (Activity)", "criteria": "사지를 움직일 수 없음", "score": 0 },
+              { "category": "호흡 (Respiration)", "criteria": "심호흡과 기침을 할 수 있음", "score": 2 },
+              { "category": "호흡 (Respiration)", "criteria": "호흡 곤란 또는 얕은 호흡", "score": 1 },
+              { "category": "호흡 (Respiration)", "criteria": "무호흡", "score": 0 },
+              { "category": "순환 (Circulation)", "criteria": "혈압이 마취 전 수준의 ±20% 이내", "score": 2 },
+              { "category": "순환 (Circulation)", "criteria": "혈압이 마취 전 수준의 ±20-49% 범위", "score": 1 },
+              { "category": "순환 (Circulation)", "criteria": "혈압이 마취 전 수준의 ±50% 이상 변화", "score": 0 },
+              { "category": "의식 (Consciousness)", "criteria": "완전히 깨어 있음", "score": 2 },
+              { "category": "의식 (Consciousness)", "criteria": "자극에 깨어남", "score": 1 },
+              { "category": "의식 (Consciousness)", "criteria": "반응 없음", "score": 0 },
+              { "category": "산소포화도 (O₂ Saturation)", "criteria": "산소 공급 없이 92% 이상 유지", "score": 2 },
+              { "category": "산소포화도 (O₂ Saturation)", "criteria": "90% 이상 유지를 위해 산소 공급 필요", "score": 1 },
+              { "category": "산소포화도 (O₂ Saturation)", "criteria": "산소 공급에도 90% 미만", "score": 0 }
+            ],
+            "note": "일반적으로 총점이 9점 이상일 때 퇴실을 고려합니다."
+          }
+        }
+      ]
+    },
+    {
+      "category": "척추/경막외 마취 (Spinal/Epidural Anesthesia)",
+      "topics": [
+        {
+          "title": "척추 마취 (Spinal Anesthesia)",
+          "characteristics": {
+            "injection_site": "지주막하 공간 (Subarachnoid space)으로 뇌척수액 (CSF) 내에 주입",
+            "onset": "빠름",
+            "drug_dose": "적은 양 필요",
+            "block_level": "국소마취제의 비중과 환자 자세에 따라 결정됨",
+            "application": "주로 하복부 및 하지 수술에 사용. 상복부 수술에는 심폐 기능 억제 위험으로 잘 사용하지 않음."
+          },
+          "complications": [
+            { "name": "저혈압 (Hypotension)", "cause": "교감신경 차단으로 인한 혈관 확장. 미주신경 긴장도가 상대적으로 증가함.", "treatment": "예방적 수액 공급, 발생 시 수액 및 승압제(에피네프린, 페닐에프린) 투여" },
+            { "name": "서맥 (Bradycardia)", "cause": "T1-T4 레벨까지 마취가 높아지면 심장촉진신경이 차단되어 발생." },
+            { "name": "구역/구토 (Nausea/Vomiting)", "cause": "저혈압으로 인한 뇌허혈 또는 미주신경 항진. 원인에 따라 승압제 또는 아트로핀(Atropine) 투여" },
+            { "name": "경막천자후두통 (Postdural Puncture Headache, PDPH)", "cause": "천자 부위로 CSF가 누출되어 발생. 젊은 여성에게 흔하며, 앉거나 서면 악화되고 누우면 호전됨.", "treatment": "보존적 치료 후 호전 없으면 경막외 혈액 봉합술 (Epidural blood patch) 시행" }
+          ],
+          "procedure_notes": "주로 Quincke needle보다 PDPH 발생률이 낮은 Whitacre needle(pencil-point)을 사용합니다. 양쪽 장골능을 잇는 선(Tuffier's line)이 L4 높이에 해당하며, 이 주변에서 시행합니다."
+        },
+        {
+          "title": "경막외 마취 (Epidural Anesthesia)",
+          "characteristics": {
+            "injection_site": "경막외 공간 (Epidural space)에 주입",
+            "onset": "느림",
+            "drug_dose": "많은 양 필요",
+            "block_level": "주입된 분절 주변에 국한됨",
+            "application": "카테터를 거치하여 지속적으로 약물을 주입할 수 있어 장시간 수술, 무통 분만, 수술 후 통증 조절에 사용됨."
+          },
+          "procedure_notes": "저항소실법 (loss of resistance technique)을 이용하여 경막외 공간을 확인합니다. 시험 용량 (test dose)을 주입하여 약물이 혈관이나 지주막하 공간으로 주입되지 않았는지 확인합니다."
+        },
+        {
+          "title": "공통 사항",
+          "content": [
+            { "point": "금기증 (Contraindications)", "details": "환자의 거부, 저혈량증, 두개내압 상승, 주사 부위 감염, 항응고제 복용 등" },
+            { "point": "약물 병용 (Adjuncts)", "details": "에피네프린 (작용 시간 연장)이나 아편유사제 (진통 효과 강화)를 국소마취제와 함께 사용합니다." },
+            { "point": "마취 차단 순서", "details": "교감신경 → 온도감각 → 통각 → 촉각 → 운동신경 순으로 차단됩니다. 알코올 솜으로 냉감각 소실을 확인하여 통증 차단 여부를 예측할 수 있습니다." }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "급성 통증 관리 (Acute Pain Management)",
+      "topics": [
+        {
+          "title": "통증의 이해와 관리의 중요성",
+          "content": [
+            {
+              "point": "통증의 정의",
+              "details": "실제적 또는 잠재적 조직 손상과 관련된 불유쾌한 감각적, 정서적 경험입니다."
+            },
+            {
+              "point": "급성 통증의 영향",
+              "details": "교감신경계를 항진시켜 빈맥, 혈압 상승을 유발하며, 제대로 조절되지 않으면 신경 가소성 (neural plasticity) 변화를 일으켜 만성 통증으로 이행될 수 있습니다."
+            },
+            {
+              "point": "치료 목표",
+              "details": "만성화를 예방하기 위해 급성 통증 단계에서 적극적인 조기 치료가 중요합니다. 일반적으로 숫자통증등급(NRS) 4점 이상일 때 적극적인 치료를 요합니다."
+            }
+          ]
+        },
+        {
+          "title": "통증의 종류",
+          "types": [
+            {
+              "name": "침해성 통증 (Nociceptive Pain)",
+              "description": "조직 손상으로 인한 통각수용체의 자극에 의해 발생합니다. (예: 수술 후 통증, 외상)",
+              "treatment": "아편유사제 (Opioids), 비스테로이드성 소염진통제 (NSAIDs), 아세트아미노펜 (Acetaminophen) 등"
+            },
+            {
+              "name": "신경병증성 통증 (Neuropathic Pain)",
+              "description": "체성감각신경계의 손상이나 질환으로 인해 발생하며, 만성화되기 쉽습니다.",
+              "treatment": "항경련제 (Gabapentin 등), 항우울제 (TCA, SNRI) 등"
+            }
+          ]
+        },
+        {
+          "title": "주요 진통제와 특징",
+          "drugs": [
+            {
+              "class": "비스테로이드성 소염진통제 (NSAIDs)",
+              "mechanism": "Cyclooxygenase (COX)를 억제합니다. COX-1은 위점막 보호 및 혈소판 응집에, COX-2는 염증 및 통증에 관여합니다.",
+              "types": [
+                { "name": "비선택적 NSAID (Non-selective)", "effect": "COX-1과 COX-2를 모두 억제하여 진통 효과가 있으나 위장 장애 및 출혈 위험이 있습니다." },
+                { "name": "선택적 COX-2 억제제 (Selective COX-2 inhibitor)", "effect": "위장 장애 부작용은 적으나, 혈전 생성 위험이 상대적으로 높을 수 있습니다." }
+              ],
+              "side_effects": "위장 장애, 출혈 경향, 신독성"
+            },
+            {
+              "class": "아세트아미노펜 (Acetaminophen)",
+              "properties": "항염증 작용은 약하지만, 위장 장애나 출혈 위험이 적어 경증-중등도 통증에 사용됩니다.",
+              "side_effects": "과량 투여 시 또는 만성 알코올 중독/영양실조 환자에서 간독성 유발 가능"
+            },
+            {
+              "class": "아편유사제 (Opioids)",
+              "properties": "강력한 진통 효과를 지닌 약물로, 중등도-중증 통증에 사용됩니다.",
+              "side_effects": "변비(내성이 생기지 않음), 오심, 구토, 호흡 억제. 변비 예방을 위해 완하제를 함께 처방해야 합니다."
+            },
+            {
+              "class": "항우울제 (Antidepressants)",
+              "properties": "신경병증성 통증 조절에 사용됩니다. 삼환계 항우울제 (TCA)와 세로토닌-노르에피네프린 재흡수 억제제 (SNRI)가 효과적입니다."
+            }
+          ]
+        },
+        {
+          "title": "다중모드 진통 (Multimodal Analgesia)",
+          "concept": "작용 기전이 다른 여러 진통 방식(예: 약물, 신경차단술)을 병용하여 진통 효과를 높이고, 각 약물의 용량을 줄여 부작용을 최소화하는 전략입니다.",
+          "benefits": "수술 후 진통제 사용량 감소, 빠른 회복, 만성 수술 후 통증 예방에 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "category": "응급의학총론 (Introduction to Emergency Medicine)",
+      "topics": [
+        {
+          "title": "응급의료 관련 법률",
+          "content": [
+            {
+              "law": "응급의료에 관한 법률",
+              "summary": "모든 응급환자에 대해 응급처치(CPR, 기도 확보 등)를 제공할 의무를 규정합니다. 정당한 사유 없이 진료를 거부할 수 없습니다."
+            },
+            {
+              "law": "호스피스·완화의료 및 임종과정에 있는 환자의 연명의료결정에 관한 법률 (연명의료결정법)",
+              "summary": "회생 가능성이 없는 환자에 대해 무의미한 연명 의료를 중단할 수 있는 권리를 보장합니다."
+            },
+            {
+              "point": "법률의 상충",
+              "details": "두 법률이 상충하는 상황에서는 응급의료법의 기준에 따라 환자의 생명을 구하는 것을 우선으로 합니다."
+            }
+          ]
+        },
+        {
+          "title": "응급실 의료분쟁 및 방어적 진료",
+          "content": [
+            {
+              "point": "의료분쟁",
+              "details": "응급의학과는 의료 소송이 많은 과 중 하나로, 이로 인해 방어적 진료(defensive medicine)를 시행하게 되는 경우가 많습니다."
+            },
+            {
+              "point": "방어적 진료의 예",
+              "details": "생명에 위협적인 원인(Life-threatening cause)을 배제하기 위해 추가적인 검사를 시행하는 것. 예를 들어, SAH가 의심되나 초기 CT에서 정상이더라도 요추천자(lumbar puncture)나 CT 혈관조영술(CT angiography)을 추가로 시행하여 확실히 배제 후 귀가시킵니다."
+            },
+            {
+              "point": "분쟁 해결 절차",
+              "steps": ["환자와의 신뢰(라포) 형성", "분쟁조정원 등을 통한 조정(ADR)", "민사/형사 소송"]
+            }
+          ]
+        },
+        {
+          "title": "응급 진료의 특수성",
+          "points": [
+            "외상 환자는 1차 평가(Primary survey), 2차 평가(Secondary survey)의 체계적인 접근이 필요합니다.",
+            "심정지 상황에서는 가역적인 원인(5H & 5T) 중 저혈량증(Hypovolemia), 긴장성 기흉(Tension pneumothorax) 등을 신속히 확인해야 합니다.",
+            "노인 환자는 심근경색(MI) 등의 중증 질환이 '힘이 없다'와 같은 비전형적인 증상으로 나타날 수 있어 주의가 필요합니다."
+          ]
+        },
+        {
+          "title": "삶의 마지막 돌봄 (End-of-Life Care, EOL)",
+          "content": [
+            {
+              "point": "완화 의료 (Palliative Care)",
+              "details": "연명의료결정법과 관련이 있으며, 노인 및 암 환자가 증가함에 따라 중요성이 커지고 있습니다. 환자의 자기결정권을 존중하여 연명의료계획서를 작성하고 편안한 임종을 맞을 수 있도록 돕습니다."
+            }
+          ]
+        },
+        {
+          "title": "한국형 응급환자 분류도구 (Korean Triage and Acuity Scale, KTAS)",
+          "description": "응급실 내원 환자를 중증도에 따라 5단계로 분류하여 진료의 우선순위를 결정하는 도구입니다.",
+          "levels": [
+            { "level": "KTAS 1", "acuity": "소생 (Resuscitation)", "time_to_md": "즉각적" },
+            { "level": "KTAS 2", "acuity": "긴급 (Emergent)", "time_to_md": "15분 이내" },
+            { "level": "KTAS 3", "acuity": "응급 (Urgent)", "time_to_md": "30분 이내" },
+            { "level": "KTAS 4", "acuity": "준응급 (Less Urgent)", "time_to_md": "1시간 이내" },
+            { "level": "KTAS 5", "acuity": "비응급 (Non-urgent)", "time_to_md": "2시간 이내" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "응급 창상 관리 (Emergency Wound Management)",
+      "topics": [
+        {
+          "title": "상처의 평가 및 봉합 시점",
+          "types": [
+            {
+              "wound_class": "청결(Clean), 청결-오염(Clean-contaminated)",
+              "suture_type": "일차 봉합 (Primary closure)",
+              "description": "상처 발생 즉시 봉합합니다."
+            },
+            {
+              "wound_class": "오염(Contaminated) 상처 및 감염된 상처",
+              "suture_type": "이차 봉합 (Secondary closure)",
+              "description": "상처를 개방한 채로 드레싱하여 육아조직이 차오르도록 두거나, 나중에 봉합합니다."
+            },
+            {
+              "wound_class": "황금 시간(6-8시간)이 지난 오염 상처",
+              "suture_type": "지연 일차 봉합 (Delayed primary closure, 삼차 봉합)",
+              "description": "3-5일간 드레싱 후 감염의 징후가 없으면 봉합합니다."
+            }
+          ]
+        },
+        {
+          "title": "창상 처치 전 평가",
+          "points": [
+            "지혈대 사용 시간은 사지 1.5-2시간, 손가락은 30-60분을 넘지 않도록 합니다.",
+            "영상의학 검사: X-ray는 유리, 금속은 잘 보이지만 나무, 플라스틱 등 유기물은 보이지 않아 초음파, CT, MRI가 필요할 수 있습니다.",
+            "신경 및 혈관 검사: 마취 전 두점식별검사(two-point discrimination), 운동 기능, 모세혈관 재충전 시간(capillary refill time)을 확인합니다."
+          ]
+        },
+        {
+          "title": "창상 전처치 (Wound Preparation)",
+          "steps": [
+            { "name": "세척 (Irrigation)", "details": "멸균 생리식염수를 사용하는 것이 원칙이며, 고압 세척이 이물질 제거에 효과적입니다. (얼굴, 두피는 저압 세척)" },
+            { "name": "소독 (Disinfection)", "details": "포비돈-요오드나 클로르헥시딘으로 상처 '주변' 피부를 소독합니다." },
+            { "name": "변연절제술 (Debridement)", "details": "괴사되거나 오염된 조직을 제거하여 감염을 예방하고 치유를 돕습니다." },
+            { "name": "예방적 항생제", "details": "교상(특히 사람), 심한 오염, 면역저하자 등 고위험군에서 투여를 고려합니다. 사람 교상(Eikenella)이나 동물 교상(Pasteurella)에는 Amoxicillin-clavulanate를 주로 사용합니다." }
+          ]
+        },
+        {
+          "title": "봉합 방법 (Suture Methods)",
+          "methods": [
+            { "name": "봉합사 (Suture)", "pros": "가장 강한 장력, 섬세한 봉합 가능.", "cons": "시간 소요, 조직 반응성 높음, 마취 필요.", "note": "숫자가 클수록 실이 가늡니다. (예: 6-0은 얼굴, 4-0은 몸통)" },
+            { "name": "스테이플러 (Staple)", "pros": "신속함, 낮은 조직 반응성.", "cons": "정교하지 않음, 영상 검사에 방해.", "use": "두피, 몸통, 사지에 사용." },
+            { "name": "조직 접착제 (Tissue adhesive)", "pros": "신속함.", "cons": "장력이 약함, 물에 약함, 피하 조직에서 염증 유발.", "use": "장력이 적은 부위의 작은 열상." },
+            { "name": "피부 봉합 테이프 (Skin closure tape)", "pros": "가장 낮은 조직 반응성 및 감염률.", "cons": "가장 약한 장력, 젖은 부위 사용 불가.", "use": "장력이 거의 없는 표피 열상." }
+          ]
+        },
+        {
+          "title": "봉합 후 관리",
+          "points": [
+            { "topic": "샤워", "details": "봉합 부위는 24-48시간 후부터 물로 씻을 수 있습니다." },
+            { "topic": "봉합사 제거 시기", "timeline": [
+              { "location": "얼굴", "duration": "3-5일" },
+              { "location": "두피", "duration": "10-14일" },
+              { "location": "팔, 다리", "duration": "7-10일" }
+            ]},
+            { "topic": "자외선 차단", "details": "봉합 후 최소 6개월간 자외선을 차단하여 색소 침착을 방지합니다." }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "외상 응급 (Trauma Emergency)",
+      "topics": [
+        {
+          "title": "병원 전 처치 (Pre-hospital Care)",
+          "priorities": [
+            "기도 유지 (Airway maintenance)와 경추 보호 (C-spine protection)",
+            "외부 출혈에 대한 직접 압박",
+            "척추 고정"
+          ]
+        },
+        {
+          "title": "초기 평가 및 소생 (Primary Survey & Resuscitation - ABCDE 접근법)",
+          "steps": [
+            { "letter": "A", "name": "Airway with C-spine protection", "action": "기도를 확보하고 경추를 보호합니다. GCS 8점 이하인 경우 기관 삽관을 고려합니다." },
+            { "letter": "B", "name": "Breathing and Ventilation", "action": "호흡을 확인하고, 긴장성 기흉과 같이 즉각적인 처치가 필요한 손상을 배제합니다." },
+            { "letter": "C", "name": "Circulation with hemorrhage control", "action": "맥박, 혈압, 피부 상태를 확인하고 출혈을 조절합니다. 요골동맥 맥박이 촉지되면 수축기 혈압이 최소 80-90mmHg 이상임을 의미합니다. 초기 수액 소생에도 저혈압이 지속되면 즉시 수혈을 시작합니다." },
+            { "letter": "D", "name": "Disability (Neurologic status)", "action": "의식 수준(GCS)과 동공 반응을 평가합니다." },
+            { "letter": "E", "name": "Exposure and Environmental control", "action": "환자의 모든 옷을 제거하여 전신을 평가하고, 저체온증을 방지하기 위해 보온합니다." }
+          ],
+          "imaging": "1차 평가 중에는 주로 이동형 X-ray와 FAST (Focused Assessment with Sonography for Trauma) 초음파를 사용합니다."
+        },
+        {
+          "title": "이차 평가 (Secondary Survey)",
+          "description": "1차 평가 및 초기 소생술로 환자의 상태가 안정된 후에 시행하는, 머리부터 발끝까지의 상세한 신체 검진 및 추가적인 영상 검사(주로 CT)를 포함합니다."
+        },
+        {
+          "title": "특수 집단에서의 외상 (Trauma in Special Populations)",
+          "group": "노인 (Elderly)",
+          "considerations": "기저 질환이 많고, 베타차단제(저혈압에도 빈맥이 나타나지 않을 수 있음)나 항응고제 등을 복용할 가능성이 높아 외상에 더 취약하므로 진료 우선순위가 높습니다."
+        },
+        {
+          "title": "허용적 저혈압 (Permissive Hypotension)",
+          "concept": "조절되지 않는 출혈이 있는 외상 환자에서, 최종적인 지혈(수술 등)이 이루어지기 전까지 혈압을 정상보다 약간 낮은 수준(sBP 80-90mmHg)으로 유지하는 전략입니다. 이는 혈압을 너무 높여 응고된 혈전을 떨어뜨리는 것을 방지하기 위함입니다."
+        }
+      ]
+    },
+    {
+      "category": "환경 응급 (Environmental Emergencies)",
+      "topics": [
+        {
+          "title": "체온 조절 기전 (Thermoregulation)",
+          "center": "시상하부 (Hypothalamus)",
+          "responses": {
+            "to_heat": "전방 시상하부 자극 → 말초혈관 확장, 발한 증가",
+            "to_cold": "후방 시상하부 자극 → 말초혈관 수축, 떨림(shivering), 대사율 증가"
+          }
+        },
+        {
+          "title": "한랭 질환 (Cold-Related Illnesses)",
+          "types": [
+            {
+              "category": "비동결성 손상 (Non-freezing Injury)",
+              "conditions": [
+                { "name": "참호족 (Trench Foot)", "description": "차고 습한 환경에 장시간 노출 시 발생. 초기에는 감각이 둔해지다 재가온 시 부종과 통증이 발생합니다." },
+                { "name": "동창 (Chilblains/Pernio)", "description": "차고 습한 환경 노출 후 12-24시간 내에 발생하는 국소적 염증 반응으로, 가려움과 통증을 동반한 붉거나 푸른 반점이 특징입니다." }
+              ]
+            },
+            {
+              "category": "동결성 손상 (Freezing Injury) - 동상 (Frostbite)",
+              "description": "조직이 실제로 얼어버리는 손상으로, 정도에 따라 1-4도로 분류됩니다.",
+              "treatment": "신속한 재가온(Rapid rewarming)이 핵심입니다. 37-39°C의 물에 담그고, 건조한 열(dry heat)은 피해야 합니다. 수포는 터뜨리지 않는 것이 원칙입니다. 혈전용해제나 혈관확장제(Iloprost)를 사용할 수 있습니다."
+            },
+            {
+              "category": "전신성 저체온증 (Systemic Hypothermia)",
+              "definition": "심부 체온 < 35°C",
+              "stages": [
+                { "stage": "경증 (Mild, 32-35°C)", "symptoms": "떨림, 의식 명료하나 판단력 저하, 빈맥, 빈호흡" },
+                { "stage": "중등도 (Moderate, 28-32°C)", "symptoms": "떨림 소실, 의식 혼미, 서맥, 호흡 저하, 심전도에서 J파(Osborn wave) 관찰 가능" },
+                { "stage": "중증 (Severe, < 28°C)", "symptoms": "혼수, 심실세동(VF) 등 치명적 부정맥, 무호흡" }
+              ],
+              "treatment": "경증은 수동적 재가온(담요 등). 중등도 이상은 능동적 외부/내부 재가온(가온 수액, 체외순환기 등)이 필요합니다. 심정지 시 체온이 32-35°C에 도달할 때까지 소생술을 지속합니다."
+            }
+          ]
+        },
+        {
+          "title": "온열 질환 (Heat-Related Illnesses)",
+          "risk_factors": "고령, 항콜린제/베타차단제 복용 등",
+          "types": [
+            { "name": "열경련 (Heat Cramp)", "cause": "땀으로 인한 염분 소실", "treatment": "경구 또는 정맥으로 염분과 수분 보충" },
+            { "name": "열탈진 (Heat Exhaustion)", "symptoms": "심부 체온 < 40°C, 피로, 어지러움, 구역/구토. 중추신경계 기능 이상은 없음.", "treatment": "서늘한 곳으로 이동 후 수분 및 전해질 보충" },
+            { "name": "열사병 (Heat Stroke)", "symptoms": "심부 체온 > 40°C 이면서 중추신경계 기능 이상(의식 변화, 경련 등)을 동반하는 응급 상황.", "treatment": "즉각적이고 공격적인 냉각 요법(Evaporative cooling, Ice water immersion)이 가장 중요합니다. 목표 체온은 39°C입니다." }
+          ]
+        },
+        {
+          "title": "기타 환경 응급",
+          "conditions": [
+            {
+              "name": "익수 (Drowning)",
+              "pathophysiology": "가장 중요한 손상은 저산소증으로 인한 뇌손상입니다.",
+              "management": "현장에서의 즉각적인 인공호흡과 CPR이 예후에 가장 중요합니다."
+            },
+            {
+              "name": "일산화탄소 (CO) 중독",
+              "symptoms": "두통, 어지럼증, 구토에서부터 의식 저하, 혼수까지 다양하게 나타납니다. 원인 불명의 의식 저하 시 의심해야 합니다.",
+              "diagnosis": "정맥혈 CO-oximetry로 Carboxyhemoglobin (COHb) 농도를 측정합니다.",
+              "treatment": "100% 산소 공급이 원칙이며, 증상이 심하거나 COHb 농도가 높으면(일반인 >25%, 임산부 >15%) 고압산소치료(HBOT)를 시행합니다."
+            },
+            {
+              "name": "독사 교상 (Snakebite)",
+              "signs": "이빨 자국(Fang mark)보다 부종, 통증, 출혈성 수포, 응고 장애가 진단에 더 중요합니다.",
+              "first_aid": "물린 부위를 심장보다 낮게 유지하고 움직임을 최소화합니다. 부목 고정은 도움이 되나, 묶거나 입으로 빠는 행위는 금기입니다.",
+              "treatment": "항뱀독소(antivenom) 투여가 주된 치료입니다."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
