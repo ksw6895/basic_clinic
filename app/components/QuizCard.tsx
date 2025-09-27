@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import type { QuizQuestion } from '../../lib/knowledgeTypes';
+import type { QuizQuestion } from '../../lib/quizTypes';
 import styles from './QuizCard.module.css';
 
 interface QuizCardProps {
@@ -56,7 +56,9 @@ export default function QuizCard({ question, index }: QuizCardProps) {
               className={`${styles.option} ${styles[state]}`}
               aria-pressed={selected === option.id}
             >
-              <span className={styles.optionText}>{option.text}</span>
+              <span className={styles.optionText}>
+                <strong>{option.label.toUpperCase()}.</strong> {option.text}
+              </span>
             </button>
           );
         })}
@@ -77,10 +79,7 @@ export default function QuizCard({ question, index }: QuizCardProps) {
       {showExplanation && (
         <div className={`${styles.explanation} ${isCorrect ? styles.explanationCorrect : styles.explanationWrong}`}>
           <strong>{isCorrect ? '정답입니다!' : '오답입니다.'}</strong>
-          <p>{question.explanation}</p>
-          {question.referencePaths.length > 0 && (
-            <p className={styles.reference}>참고: {question.referencePaths.join(' / ')}</p>
-          )}
+          <div className={styles.explanationBody} dangerouslySetInnerHTML={{ __html: question.explanationHtml }} />
         </div>
       )}
     </article>

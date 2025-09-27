@@ -1,27 +1,20 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import type { KnowledgeCategory, QuizQuestion } from '../../lib/knowledgeTypes';
+import type { QuizCategory } from '../../lib/quizTypes';
 import QuizCard from './QuizCard';
-import KnowledgeSection from './KnowledgeSection';
 import styles from './QuizDashboard.module.css';
 
 interface QuizDashboardProps {
-  categories: KnowledgeCategory[];
-  questions: QuizQuestion[];
+  categories: QuizCategory[];
 }
 
-export default function QuizDashboard({ categories, questions }: QuizDashboardProps) {
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]?.category ?? '');
+export default function QuizDashboard({ categories }: QuizDashboardProps) {
+  const [selectedCategoryId, setSelectedCategoryId] = useState(categories[0]?.id ?? '');
 
-  const filteredQuestions = useMemo(
-    () => questions.filter((question) => question.category === selectedCategory),
-    [questions, selectedCategory]
-  );
-
-  const activeCategory = useMemo(
-    () => categories.find((category) => category.category === selectedCategory) ?? categories[0],
-    [categories, selectedCategory]
+  const selectedCategory = useMemo(
+    () => categories.find((category) => category.id === selectedCategoryId) ?? categories[0],
+    [categories, selectedCategoryId]
   );
 
   return (
@@ -29,37 +22,42 @@ export default function QuizDashboard({ categories, questions }: QuizDashboardPr
       <aside className={styles.sidebar}>
         <h1>의학 통합 퀴즈</h1>
         <p className={styles.subtitle}>
-          knowledge.json에 수록된 외과·응급 의학 핵심 내용을 기반으로 카테고리를 선택하고, 4지선다형 문제를 풀어보세요.
+          quiz.md에 정리된 공식 문제와 해설을 그대로 옮겨 놓았습니다. 카테고리를 선택해 실제 출제 문항을 확인하고 풀어보세요.
         </p>
         <div className={styles.categoryList}>
           {categories.map((category) => (
             <button
-              key={category.category}
+              key={category.id}
               type="button"
-              onClick={() => setSelectedCategory(category.category)}
+              onClick={() => setSelectedCategoryId(category.id)}
               className={`${styles.categoryButton} ${
-                selectedCategory === category.category ? styles.categoryButtonActive : ''
+                selectedCategoryId === category.id ? styles.categoryButtonActive : ''
               }`}
             >
-              {category.category}
+              {category.title}
             </button>
           ))}
         </div>
       </aside>
       <main className={styles.main}>
-        <section className={styles.quizIntro}>
-          <h2>{selectedCategory}</h2>
-          <p>
-            아래 문제들은 해당 카테고리의 실전 임상 포인트를 기반으로 구성되었습니다. 정답과 해설에는 knowledge.json에 포함된 상세 설명이
-            그대로 담겨 있어 복습에 도움이 됩니다.
-          </p>
-        </section>
-        <div className={styles.quizList}>
-          {filteredQuestions.map((question, index) => (
-            <QuizCard key={question.id} question={question} index={index} />
-          ))}
-        </div>
-        {activeCategory && <KnowledgeSection category={activeCategory} />}
+        {selectedCategory ? (
+          <>
+            <section className={styles.quizIntro}>
+              <h2>{selectedCategory.title}</h2>
+              <p>
+                이 섹션의 모든 문항과 해설은 quiz.md에 작성된 내용을 그대로 반영합니다. 정답 확인 후에는 제공된 해설을 통해 근거와 오답
+                포인트를 꼼꼼하게 복습하세요.
+              </p>
+            </section>
+            <div className={styles.quizList}>
+              {selectedCategory.questions.map((question, index) => (
+                <QuizCard key={question.id} question={question} index={index} />
+              ))}
+            </div>
+          </>
+        ) : (
+          <p className={styles.emptyState}>표시할 카테고리가 없습니다.</p>
+        )}
       </main>
     </div>
   );

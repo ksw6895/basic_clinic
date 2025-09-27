@@ -1,7 +1,6 @@
 import QuizDashboard from './components/QuizDashboard';
-import knowledgeData from '../data/knowledge';
-import { quizBank } from '../data/questions';
+import { quizCategories } from '../data/quizCategories';
 
 export default function Page() {
-  return <QuizDashboard categories={knowledgeData.medical_summary} questions={quizBank} />;
+  return <QuizDashboard categories={quizCategories} />;
 }

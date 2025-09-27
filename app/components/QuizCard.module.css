@@ -122,11 +122,21 @@
   color: #991b1b;
 }
 
-.reference {
-  margin-top: 8px;
-  font-size: 0.85rem;
-  color: inherit;
-  opacity: 0.85;
+.explanationBody {
+  margin-top: 12px;
+}
+
+.explanationBody :global(p) {
+  margin: 0 0 12px 0;
+}
+
+.explanationBody :global(ul) {
+  padding-left: 20px;
+  margin: 0 0 12px 0;
+}
+
+.explanationBody :global(li) {
+  margin-bottom: 6px;
 }
 
 @media (max-width: 768px) {
