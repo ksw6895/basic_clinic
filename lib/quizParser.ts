@@ -14,6 +14,10 @@ function sanitizePrompt(raw: string): string {
   return raw.replace(/\s+/g, ' ').trim();
 }
 
+function renderMarkdownSync(markdown: string): string {
+  return marked.parse(markdown, { async: false }) as string;
+}
+
 function parseOptions(block: string, baseId: string): QuizOption[] {
   const options: QuizOption[] = [];
   let match: RegExpExecArray | null;
@@ -71,7 +75,7 @@ function attachExplanations(
     }
 
     const markdown = `**정답: ${answerLabel.toUpperCase()}**\n${body.trim()}`;
-    target.explanationHtml = marked.parse(markdown);
+    target.explanationHtml = renderMarkdownSync(markdown);
   }
   EXPLANATION_REGEX.lastIndex = 0;
 
@@ -82,7 +86,9 @@ function attachExplanations(
         answerId: question.options[0].id,
         explanationHtml:
           question.explanationHtml ||
-          marked.parse(`**정답: ${question.options[0].label.toUpperCase()}**\n해설이 제공되지 않았습니다.`)
+          renderMarkdownSync(
+            `**정답: ${question.options[0].label.toUpperCase()}**\n해설이 제공되지 않았습니다.`
+          )
       };
     }
     return question;
