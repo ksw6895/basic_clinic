@@ -1,0 +1,43 @@
+export const LABEL_MAP: Record<string, string> = {
+  point: '핵심 포인트',
+  details: '설명',
+  criteria: '기준',
+  content: '내용',
+  guidelines: '가이드라인',
+  complications: '합병증',
+  steps: '단계',
+  factors: '위험 인자',
+  systems: '체계',
+  agents: '약제',
+  types: '유형',
+  concept: '개념',
+  benefits: '이점',
+  definition: '정의',
+  description: '설명',
+  management: '관리',
+  management_priority: '우선 처치',
+  procedures: '시술',
+  timeline: '경과',
+  strategies: '전략',
+  note: '참고',
+  notes: '참고',
+  table_data: '요약 표',
+  assessments: '평가 항목',
+  tests: '검사',
+  problems: '문제',
+  responses: '반응',
+  risk_factors: '위험 요인',
+  center: '조절 중심',
+  group: '대상',
+  considerations: '고려 사항',
+  priorities: '우선순위',
+  imaging: '영상 검사',
+  classes: '분류',
+  sub_points: '세부 포인트',
+  term: '용어',
+  cause: '원인'
+};
+
+export function formatLabel(key: string): string {
+  return LABEL_MAP[key] ?? key;
+}
